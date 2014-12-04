@@ -17,6 +17,8 @@ function setup() {
 }
 
 function draw() {
+  var x;
+  x=10;
 
   background(131,210,222);
   var vol = analyzer.getLevel();

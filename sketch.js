@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(710, 200);
+  createCanvas(600, 300);
   song.loop();
   analyzer = new p5.Amplitude();
   analyzer.setInput(song);
@@ -14,7 +14,9 @@ function setup() {
 function draw() {
   background(255);
   var vol = analyzer.getLevel();
-  fill(127);
-  stroke(0);
-  ellipse(width/2, height/2, 10+vol*200, 10+vol*200);
+  fill(255,74,74);
+  stroke(255);
+  ellipse(100, 150, 10+vol*200, 10+vol*200,10);
+  fill(182,239,44);
+  ellipse(200, 150, 10+vol*200, 10+vol*200,10);
 }

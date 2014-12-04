@@ -1,17 +1,28 @@
-var song;
+var song, analyzer;
 
-function setup(){
-	song = loadSound('soran-cheese.mp3');
-	createCanvas(800,800);
-	backgound(255);
+function preload() {
+  song = loadSound('soran_cheese.mp3');
 }
 
-function mousePressed(){
-	if ( song.isPlaying() ) { // .isPlaying() returns a boolean
-    song.stop();
-    background(255,0,0);
-  } else {
-    song.play();
-    background(0,255,0);
-  }
+function setup() {
+  createCanvas(710, 200);
+  song.loop();
+
+  // create a new Amplitude analyzer
+  analyzer = new p5.Amplitude();
+
+  // Patch the input to an volume analyzer
+  analyzer.setInput(song);
+}
+
+function draw() {
+  background(255);
+
+  // Get the overall volume (between 0 and 1.0)
+  var vol = analyzer.getLevel();
+  fill(127);
+  stroke(0);
+
+  // Draw an ellipse with size based on volume
+  ellipse(width/2, height/2, 10+vol*200, 10+vol*200);
 }

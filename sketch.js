@@ -18,5 +18,5 @@ function draw() {
   stroke(255);
   ellipse(100, 150, 10+vol*200, 10+vol*200,10);
   fill(182,239,44);
-  ellipse(200, 150, 10+vol*200, 10+vol*200,10);
+  rect(200, 150, vol*200, 50+vol*200,80);
 }

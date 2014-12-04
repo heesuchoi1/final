@@ -54,6 +54,6 @@ function word(){
     fill(255);
     textSize(15);
     textFont("Helvetica");
-    text("If you click the circle, then it will changes", 300, 200);
+    text("If you click the circle, then it will changes", 130, 250);
 }
 

@@ -32,7 +32,7 @@ function draw() {
   fill(255,74,74);
   ellipse(width/2, height/2, 10+vol*200, 10+vol*200);
   noFill();
-  ellipse(width/2, height/2, 130+vol*200, 130+vol*200);
+  ellipse(width/2, height/2, 130+vol*600, 130+vol*600);
 
 }
 
@@ -45,4 +45,12 @@ function mousePressed() {
     g = random(255);
     b = random(255);
   }
+
+function text(){
+    fill(255);
+    textSize(15);
+    textFont("Helvetica");
+    text("If you click the circle, then it will changes", 300, 280);
 }
+}
+

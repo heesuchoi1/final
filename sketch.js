@@ -52,7 +52,7 @@ function mousePressed() {
 
 function word(){
     fill(255);
-    textSize(15);
+    textSize(20);
     textFont("Helvetica");
     text("If you click the circle, then it will changes", 130, 250);
 }

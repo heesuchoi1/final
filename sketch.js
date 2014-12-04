@@ -49,7 +49,7 @@ function mousePressed() {
 
 }
 
-function text(){
+function word(){
     fill(255);
     textSize(15);
     textFont("Helvetica");

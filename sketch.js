@@ -17,6 +17,7 @@ function setup() {
 }
 
 function draw() {
+
   background(131,210,222);
   var vol = analyzer.getLevel();
   strokeWeight(2);
@@ -30,6 +31,8 @@ function draw() {
   ellipse(width/2, height/2, 50+vol*200, 50+vol*200);
   fill(255,74,74);
   ellipse(width/2, height/2, 10+vol*200, 10+vol*200);
+  noFill();
+  ellipse(width/2, height/2, 130+vol*200, 130+vol*200);
 
 }
 

@@ -38,7 +38,6 @@ function draw() {
   ellipse(width/2, height/2, 130+vol*600, 130+vol*600);
   word();
   drawSnow();
-  drawSnow2();
 
     
 

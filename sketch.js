@@ -92,3 +92,26 @@ function drawSnow(){
  }
 
 }
+
+function drawSnow2(){
+  var r=Math.random();
+
+
+  fill(255);
+  ellipse(300,0,50,50);
+  ellipse(300,30,30,30);
+  ellipse(300,60,15,15);
+  ellipse(300,dir1+90,25,25);
+  ellipse(300,dir1+100,20,20);
+  ellipse(300,dir1+450,15,15);
+  ellipse(300,dir1+270,5,5);
+  ellipse(300,dir1+180,25,25);
+  ellipse(300,dir1+410,14,14);
+  ellipse(300,dir1+230,17,17);
+  ellipse(300,dir1+150,28,28);
+  ellipse(300,dir1+190,10,10);
+  ellipse(300,dir1+80,8,8);
+  ellipse(300,dir1+260,27,27);
+  ellipse(300,dir1+200,25,25);
+
+}

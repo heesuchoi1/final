@@ -1,3 +1,5 @@
+
+var yoff = 0.0; 
 var song, analyzer;
 var r, g, b;
 var dir1=1;
@@ -22,6 +24,21 @@ function draw() {
   x=10;
 
   background(131,210,222);
+  fill(235,231,170);
+  beginShape(); 
+  var xoff = 0;
+  for (var x = 0; x <= width; x += 10) {
+    var y = map(noise(xoff, yoff), 0, 1, 200,300);
+    vertex(x, y); 
+   
+    xoff += 0.05;
+  }
+
+  yoff += 0.01;
+  vertex(width, height);
+  vertex(0, height);
+  endShape(CLOSE);
+  
   var vol = analyzer.getLevel();
   strokeWeight(2);
   stroke(255);

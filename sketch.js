@@ -1,10 +1,7 @@
 var song, analyzer;
 
-function preload() {
-  song = loadSound("cheese.mp3");
-}
-
 function setup() {
+  song = loadSound("cheese.mp3");
   createCanvas(710, 200);
   song.loop();
 

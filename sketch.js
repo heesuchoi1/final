@@ -1,7 +1,7 @@
 var song, analyzer;
 
 function preload() {
-  song = loadSound('soran_cheese.mp3');
+  song = loadSound('cheese.mp3');
 }
 
 function setup() {

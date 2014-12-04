@@ -35,6 +35,26 @@ function draw() {
   ellipse(width/2, height/2, 130+vol*600, 130+vol*600);
   word();
 
+     //snow
+     fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+     var y;
+     y=300;
+     
+     rect(20,180,1*x,1*x);
+     rect(120,80,15,15);
+     rect(180,200,13,13);
+     rect(270,100,15,15);
+     rect(400,10,18,18);
+     rect(500,200,12,12);
+     rect(200,180+y,1*x,1*x);
+
+     y=600;
+     rect(20,180+y,13,13);
+     rect(120,80+y,15,15);
+     rect(180,200+y,13,13);
+
+    
+
 }
 
 function mousePressed() {
@@ -51,7 +71,8 @@ function mousePressed() {
 }
 
 function word(){
-    fill(255);
+    fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+    stroke(255);
     textSize(20);
     textFont("Helvetica");
     text("If you click the circle, then it will changes", 130, 250);

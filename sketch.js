@@ -46,11 +46,13 @@ function mousePressed() {
     b = random(255);
   }
 
+
+}
+
 function text(){
     fill(255);
     textSize(15);
     textFont("Helvetica");
-    text("If you click the circle, then it will changes", 300, 280);
-}
+    text("If you click the circle, then it will changes", 300, 200);
 }
 

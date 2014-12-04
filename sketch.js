@@ -38,7 +38,7 @@ function draw() {
      //snow
      fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
      var y;
-     y=300;
+     y=100;
      
      rect(120,80,15,15);
      rect(180,200,13,13);

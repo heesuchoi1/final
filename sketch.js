@@ -68,22 +68,22 @@ function word(){
 function drawSnow(){
   var r=Math.random();
   stroke(255,255,255,128);
-  strokeWeight(20);
+  strokeWeight(10);
 
   fill(255);
   ellipse(280,dir1,30,30);
-  ellipse(100,dir1+80,20,20);
+  ellipse(400,dir1+80,20,20);
   ellipse(150,dir1+r,30,30);
-  ellipse(50,dir1+90,25,25);
+  ellipse(450,dir1+90,25,25);
   ellipse(80,dir1+100,20,20);
   ellipse(210,dir1+80,15,15);
-  ellipse(250,dir1+270,5,5);
+  ellipse(350,dir1+270,5,5);
   ellipse(130,dir1+180,25,25);
-  ellipse(180,dir1+210,34,34);
-  ellipse(110,dir1+230,17,17);
+  ellipse(380,dir1+210,34,34);
+  ellipse(510,dir1+230,17,17);
   ellipse(230,dir1+130,28,28);
   ellipse(20,dir1+150,10,10);
-  ellipse(170,dir1+80,8,8);
+  ellipse(570,dir1+80,8,8);
   ellipse(260,dir1+260,27,27);
   ellipse(170,dir1+200,35,35);
     dir1=dir1+3;     

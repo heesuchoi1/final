@@ -1,5 +1,6 @@
 var song, analyzer;
 var r, g, b;
+var dir1=1;
 
 function preload() {
   song = loadSound("./cheese.mp3");
@@ -36,23 +37,8 @@ function draw() {
   noFill();
   ellipse(width/2, height/2, 130+vol*600, 130+vol*600);
   word();
+  drawSnow();
 
-     //snow
-     fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
-     var y;
-     y=100;
-     
-     rect(120,80,15,15);
-     rect(180,200,13,13);
-     rect(270,100,15,15);
-     rect(400,10,18,18);
-     rect(500,200,12,12);
-     rect(200,180+y,1*x,1*x);
-
-     y=600;
-     rect(20,180+y,13,13);
-     rect(120,80+y,15,15);
-     rect(180,200+y,13,13);
 
     
 
@@ -79,3 +65,30 @@ function word(){
     text("If you click the circle, then it will changes", 130, 250);
 }
 
+function drawSnow(){
+  var r=Math.random();
+  stroke(255,255,255,128);
+  strokeWeight(20);
+
+  fill(255);
+  ellipse(700,dir1,50,50);
+  ellipse(100,dir1+500,20,20);
+  ellipse(200,dir1+r,30,30);
+  ellipse(300,dir1+800,25,25);
+  ellipse(400,dir1+100,20,20);
+  ellipse(500,dir1+350,34,34);
+  ellipse(600,dir1+270,47,47);
+  ellipse(800,dir1+900,25,25);
+  ellipse(900,dir1+670,34,34);
+  ellipse(1000,dir1+230,17,17);
+  ellipse(1100,dir1+590,28,28);
+  ellipse(1200,dir1+312,33,33);
+  ellipse(1300,dir1+100,50,50);
+  ellipse(1400,dir1+400,27,27);
+  ellipse(1500,dir1+777,35,35);
+    dir1=dir1+3;     
+    if(dir1>1700){
+     dir1=-1700;
+ }
+
+}

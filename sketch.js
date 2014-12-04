@@ -71,21 +71,21 @@ function drawSnow(){
   strokeWeight(10);
 
   fill(255);
-  ellipse(280,dir1,90,30);
+  ellipse(280,dir1,30,30);
   ellipse(400,dir1+70,20,20);
-  ellipse(150,dir1+r,30,30);
+  ellipse(150,dir1+r,12,12);
   ellipse(450,dir1+90,25,25);
   ellipse(80,dir1+100,20,20);
   ellipse(210,dir1+450,15,15);
   ellipse(350,dir1+270,5,5);
   ellipse(130,dir1+180,25,25);
-  ellipse(380,dir1+410,34,34);
+  ellipse(380,dir1+410,14,14);
   ellipse(510,dir1+230,17,17);
   ellipse(230,dir1+150,28,28);
   ellipse(20,dir1+190,10,10);
   ellipse(570,dir1+80,8,8);
   ellipse(260,dir1+260,27,27);
-  ellipse(170,dir1+200,35,35);
+  ellipse(170,dir1+200,25,25);
     dir1=dir1+4;     
     if(dir1>300){
      dir1=-300;

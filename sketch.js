@@ -33,6 +33,7 @@ function draw() {
   ellipse(width/2, height/2, 10+vol*200, 10+vol*200);
   noFill();
   ellipse(width/2, height/2, 130+vol*600, 130+vol*600);
+  word();
 
 }
 

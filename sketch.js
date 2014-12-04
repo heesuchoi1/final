@@ -26,7 +26,7 @@ function draw() {
   stroke(255);
   fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
   ellipse(width/2, height/2, 90+vol*500, 90+vol*500);
-  fill(182,239,44);
+  fill(r,g,b,150);
   ellipse(width/2, height/2, 50+vol*200, 50+vol*200);
   fill(255,74,74);
   ellipse(width/2, height/2, 10+vol*200, 10+vol*200);

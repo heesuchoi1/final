@@ -38,7 +38,7 @@ function draw() {
   ellipse(width/2, height/2, 130+vol*600, 130+vol*600);
   word();
   drawSnow();
-
+  drawSnow2();
 
     
 
@@ -94,9 +94,6 @@ function drawSnow(){
 }
 
 function drawSnow2(){
-  var r=Math.random();
-
-
   fill(255);
   ellipse(300,0,50,50);
   ellipse(300,30,30,30);

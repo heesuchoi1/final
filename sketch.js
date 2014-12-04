@@ -20,6 +20,8 @@ function draw() {
   stroke(255);
   ellipse(100, 150, 10+vol*200, 10+vol*200);
   fill(182,239,44);
-  ellipse(200, 150, vol*200, 50+vol*200);
+  ellipse(200, 150, 50+vol*200, 50+vol*200);
   fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+  ellipse(200, 150, 90+vol*200, 50+vol*200)
 }
+
